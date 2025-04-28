@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ product.name }} - Вірний{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="mb-3">{{ product.name }}</h1>
+            
+            {% if product.is_special %}
+            <div class="badge bg-danger mb-3">Спеціальна пропозиція</div>
+            {% endif %}
+
+            <p class="lead">{{ product.description }}</p>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Деталі</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Категорія:</strong> {{ product.category.name }}</li>
+                        <li><strong>Температура:</strong> {{ product.get_temperature_display }}</li>
+                        <li><strong>Розмір:</strong> {{ product.get_size_display }}</li>
+                        <li><strong>Калорійність:</strong> {{ product.calories }} ккал</li>
+                        <li><strong>Час приготування:</strong> {{ product.preparation_time }} хв</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Інгредієнти</h5>
+                    <p>{{ product.ingredients|linebreaks }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card sticky-top" style="top: 20px;">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">{{ product.price }} грн</h3>
+                    
+                    <form class="mb-3">
+                        <div class="mb-3">
+                            <label class="form-label">Температура</label>
+                            <select class="form-select">
+                                {% if product.temperature == 'both' or product.temperature == 'hot' %}
+                                <option value="hot">Гарячий</option>
+                                {% endif %}
+                                {% if product.temperature == 'both' or product.temperature == 'cold' %}
+                                <option value="cold">Холодний</option>
+                                {% endif %}
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Розмір</label>
+                            <select class="form-select">
+                                <option value="S">Маленький (180 мл)</option>
+                                <option value="M" selected>Середній (250 мл)</option>
+                                <option value="L">Великий (350 мл)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Кількість</label>
+                            <input type="number" class="form-control" value="1" min="1" max="10">
+                        </div>
+                        
+                        <button type="button" class="btn btn-success w-100 btn-lg">
+                            Додати до кошика
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
