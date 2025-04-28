@@ -1,0 +1,226 @@
+[
+{
+  "model": "virnyi.menucategory",
+  "pk": 1,
+  "fields": {
+    "name": "Кавові напої",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 2,
+  "fields": {
+    "name": "Гарячі напої",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 3,
+  "fields": {
+    "name": "Холодні напої",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 4,
+  "fields": {
+    "name": "Випічка",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 5,
+  "fields": {
+    "name": "Десерти",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 6,
+  "fields": {
+    "name": "Аксесуари",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 7,
+  "fields": {
+    "name": "Сніданки",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 8,
+  "fields": {
+    "name": "Кавові зерна",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Американо",
+    "description": "Еспресо + вода",
+    "price": "50.00",
+    "is_available": true,
+    "temperature": "hot",
+    "size": "M",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 2,
+    "created_at": "2025-04-21T18:28:29.470Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Американо з молоком",
+    "description": "Американо з молоком",
+    "price": "60.00",
+    "is_available": true,
+    "temperature": "hot",
+    "size": "M",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 4,
+    "created_at": "2025-04-21T18:29:01.581Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 3,
+  "fields": {
+    "category": 4,
+    "name": "Крусан з шоколадом",
+    "description": "Круасан",
+    "price": "50.00",
+    "is_available": true,
+    "temperature": "cold",
+    "size": "M",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 0,
+    "created_at": "2025-04-21T18:29:56.045Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 4,
+  "fields": {
+    "category": 3,
+    "name": "Айс Латте",
+    "description": "Айс Латте",
+    "price": "65.00",
+    "is_available": true,
+    "temperature": "cold",
+    "size": "L",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 3,
+    "created_at": "2025-04-21T18:31:52.240Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 5,
+  "fields": {
+    "category": 2,
+    "name": "Зелений чай",
+    "description": ".",
+    "price": "40.00",
+    "is_available": true,
+    "temperature": "hot",
+    "size": "L",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 2,
+    "created_at": "2025-04-21T18:32:20.900Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name": "Флет Вайт",
+    "description": ".",
+    "price": "65.00",
+    "is_available": true,
+    "temperature": "hot",
+    "size": "M",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 5,
+    "created_at": "2025-04-21T18:32:47.797Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 7,
+  "fields": {
+    "category": 5,
+    "name": "Тістечко шоколадне",
+    "description": ".",
+    "price": "70.00",
+    "is_available": true,
+    "temperature": "cold",
+    "size": "M",
+    "ingredients": ".",
+    "calories": 200,
+    "preparation_time": 0,
+    "created_at": "2025-04-21T18:33:14.034Z",
+    "is_special": false
+  }
+},
+{
+  "model": "virnyi.menuitem",
+  "pk": 8,
+  "fields": {
+    "category": 6,
+    "name": "Фірмова кружка",
+    "description": ".",
+    "price": "250.00",
+    "is_available": true,
+    "temperature": "cold",
+    "size": "M",
+    "ingredients": ".",
+    "calories": 0,
+    "preparation_time": 0,
+    "created_at": "2025-04-21T18:33:37.533Z",
+    "is_special": false
+  }
+}
+]
