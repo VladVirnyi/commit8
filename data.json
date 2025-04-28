@@ -1,0 +1,82 @@
+[
+{
+  "model": "virnyi.menucategory",
+  "pk": 1,
+  "fields": {
+    "name": "Кавові напої",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 2,
+  "fields": {
+    "name": "Гарячі напої",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 3,
+  "fields": {
+    "name": "Холодні напої",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 4,
+  "fields": {
+    "name": "Випічка",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 5,
+  "fields": {
+    "name": "Десерти",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 6,
+  "fields": {
+    "name": "Аксесуари",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 7,
+  "fields": {
+    "name": "Сніданки",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+},
+{
+  "model": "virnyi.menucategory",
+  "pk": 8,
+  "fields": {
+    "name": "Кавові зерна",
+    "description": "",
+    "is_available": true,
+    "display_order": 0
+  }
+}
+]
