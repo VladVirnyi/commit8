@@ -3,7 +3,7 @@
   "model": "virnyi.menucategory",
   "pk": 1,
   "fields": {
-    "name": "Кавові напої",
+    "name": "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -13,7 +13,7 @@
   "model": "virnyi.menucategory",
   "pk": 2,
   "fields": {
-    "name": "Гарячі напої",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -23,7 +23,7 @@
   "model": "virnyi.menucategory",
   "pk": 3,
   "fields": {
-    "name": "Холодні напої",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -33,7 +33,7 @@
   "model": "virnyi.menucategory",
   "pk": 4,
   "fields": {
-    "name": "Випічка",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -43,7 +43,7 @@
   "model": "virnyi.menucategory",
   "pk": 5,
   "fields": {
-    "name": "Десерти",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -53,7 +53,7 @@
   "model": "virnyi.menucategory",
   "pk": 6,
   "fields": {
-    "name": "Аксесуари",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -63,7 +63,7 @@
   "model": "virnyi.menucategory",
   "pk": 7,
   "fields": {
-    "name": "Сніданки",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -73,7 +73,7 @@
   "model": "virnyi.menucategory",
   "pk": 8,
   "fields": {
-    "name": "Кавові зерна",
+    "name": "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ",
     "description": "",
     "is_available": true,
     "display_order": 0
@@ -84,8 +84,8 @@
   "pk": 1,
   "fields": {
     "category": 1,
-    "name": "Американо",
-    "description": "Еспресо + вода",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+    "description": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ + пїЅпїЅпїЅпїЅ",
     "price": "50.00",
     "is_available": true,
     "temperature": "hot",
@@ -102,8 +102,8 @@
   "pk": 2,
   "fields": {
     "category": 1,
-    "name": "Американо з молоком",
-    "description": "Американо з молоком",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+    "description": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "price": "60.00",
     "is_available": true,
     "temperature": "hot",
@@ -120,8 +120,8 @@
   "pk": 3,
   "fields": {
     "category": 4,
-    "name": "Крусан з шоколадом",
-    "description": "Круасан",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+    "description": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "price": "50.00",
     "is_available": true,
     "temperature": "cold",
@@ -138,8 +138,8 @@
   "pk": 4,
   "fields": {
     "category": 3,
-    "name": "Айс Латте",
-    "description": "Айс Латте",
+    "name": "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ",
+    "description": "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ",
     "price": "65.00",
     "is_available": true,
     "temperature": "cold",
@@ -156,7 +156,7 @@
   "pk": 5,
   "fields": {
     "category": 2,
-    "name": "Зелений чай",
+    "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ",
     "description": ".",
     "price": "40.00",
     "is_available": true,
@@ -174,7 +174,7 @@
   "pk": 6,
   "fields": {
     "category": 1,
-    "name": "Флет Вайт",
+    "name": "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",
     "description": ".",
     "price": "65.00",
     "is_available": true,
@@ -192,7 +192,7 @@
   "pk": 7,
   "fields": {
     "category": 5,
-    "name": "Тістечко шоколадне",
+    "name": "ТіпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "description": ".",
     "price": "70.00",
     "is_available": true,
@@ -210,7 +210,7 @@
   "pk": 8,
   "fields": {
     "category": 6,
-    "name": "Фірмова кружка",
+    "name": "ФіпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
     "description": ".",
     "price": "250.00",
     "is_available": true,
