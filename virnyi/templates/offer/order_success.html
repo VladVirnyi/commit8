@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Замовлення оформлене - Кав'ярня{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <h4 class="alert-heading">Дякуємо за замовлення!</h4>
+        <p>Ваше замовлення успішно оформлене. Ми зв'яжемося з вами найближчим часом для підтвердження.</p>
+    </div>
+    <a href="{% url 'category_list' %}" class="btn btn-primary">Повернутися до меню</a>
+</div>
+{% endblock %}

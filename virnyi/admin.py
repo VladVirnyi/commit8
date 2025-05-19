@@ -13,3 +13,4 @@ class MenuItemAdmin(admin.ModelAdmin):
     list_display = ['name', 'category', 'price', 'is_available', 'temperature', 'size']
     list_filter = ['category', 'is_available', 'temperature', 'is_special']
     search_fields = ['name', 'description']
+

@@ -38,6 +38,7 @@ def category_detail(request, category_id):
     })
 
 
+
 def product_detail(request, product_id):
     product = get_object_or_404(MenuItem, id=product_id)
     return render(request, 'product_detail.html', {

@@ -30,6 +30,7 @@ class MenuItem(models.Model):
         ('L', 'Великий (350 мл)'),
     ]
 
+
     category = models.ForeignKey(MenuCategory, on_delete=models.CASCADE, verbose_name="Категорія")
     name = models.CharField(max_length=200, verbose_name="Назва позиції")
     description = models.TextField(verbose_name="Опис", help_text="Детальний опис складу та приготування")
