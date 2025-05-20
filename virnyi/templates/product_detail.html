@@ -7,6 +7,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
+            {% if product.image %}
+            <img src="{{ product.image.url }}" class="img-fluid rounded mb-4" alt="{{ product.name }}">
+            {% endif %}
+
             <h1 class="mb-3">{{ product.name }}</h1>
             
             {% if product.is_special %}
@@ -41,10 +45,32 @@
                 <div class="card-body">
                     <h3 class="card-title text-center mb-4">{{ product.price }} грн</h3>
                     
-                    <form class="mb-3">
+                    <form method="POST" action="{% url 'create_order' product.id %}">
+                        {% csrf_token %}
+
                         <div class="mb-3">
-                            <label class="form-label">Температура</label>
-                            <select class="form-select">
+                            <label for="customer_name" class="form-label">Ваше ім'я*</label>
+                            <input type="text" class="form-control" id="customer_name" name="customer_name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="customer_phone" class="form-label">Телефон*</label>
+                            <input type="tel" class="form-control" id="customer_phone" name="customer_phone" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="customer_email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="customer_email" name="customer_email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Адреса доставки*</label>
+                            <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="temperature" class="form-label">Температура</label>
+                            <select class="form-select" id="temperature" name="temperature">
                                 {% if product.temperature == 'both' or product.temperature == 'hot' %}
                                 <option value="hot">Гарячий</option>
                                 {% endif %}
@@ -53,24 +79,28 @@
                                 {% endif %}
                             </select>
                         </div>
-                        
+
                         <div class="mb-3">
-                            <label class="form-label">Розмір</label>
-                            <select class="form-select">
+                            <label for="size" class="form-label">Розмір</label>
+                            <select class="form-select" id="size" name="size">
                                 <option value="S">Маленький (180 мл)</option>
                                 <option value="M" selected>Середній (250 мл)</option>
                                 <option value="L">Великий (350 мл)</option>
                             </select>
                         </div>
-                        
+
                         <div class="mb-3">
-                            <label class="form-label">Кількість</label>
-                            <input type="number" class="form-control" value="1" min="1" max="10">
+                            <label for="quantity" class="form-label">Кількість</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity"
+                                   value="1" min="1" max="10">
                         </div>
-                        
-                        <button type="button" class="btn btn-success w-100 btn-lg">
-                            Додати до кошика
-                        </button>
+
+                        <div class="mb-3">
+                            <label for="notes" class="form-label">Примітки до замовлення</label>
+                            <textarea class="form-control" id="notes" name="notes" rows="2"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Оформити замовлення</button>
                     </form>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils import timezone
+from imagekit.processors import ResizeToFill
+from imagekit.models import ProcessedImageField
 
 
 class MenuCategory(models.Model):
@@ -18,6 +20,17 @@ class MenuCategory(models.Model):
 
 
 class MenuItem(models.Model):
+
+    image = ProcessedImageField(
+        upload_to='menu_items/',
+        processors=[ResizeToFill(640, 480)],
+        format='JPEG',
+        options={'quality': 60},
+        verbose_name="Зображення",
+        blank=True,
+        null=True
+    )
+
     TEMPERATURE_CHOICES = [
         ('hot', 'Гарячий'),
         ('cold', 'Холодний'),
@@ -66,3 +79,20 @@ class MenuItem(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.get_size_display()})"
+
+class Order(models.Model):
+    product = models.ForeignKey(MenuItem, on_delete=models.CASCADE, verbose_name="Товар", default=1)
+    customer_name = models.CharField(max_length=100, verbose_name="Ім'я замовника", blank=True, null=True)
+    customer_phone = models.CharField(max_length=20, verbose_name="Телефон", blank=True, null=True)
+    customer_email = models.EmailField(verbose_name="Email", blank=True, null=True)
+    address = models.TextField(verbose_name="Адреса доставки")
+    order_date = models.DateTimeField(auto_now_add=True, verbose_name="Дата замовлення", blank=True, null=True)
+    notes = models.TextField(blank=True, verbose_name="Примітки до замовлення")
+
+    class Meta:
+        verbose_name = "Замовлення"
+        verbose_name_plural = "Замовлення"
+
+    def __str__(self):
+        return f"Замовлення {self.id} - {self.customer_name}"
+
